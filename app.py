@@ -15,7 +15,6 @@ import numpy as np
 import streamlit as st
 import torch
 import torch.nn as nn
-import torch_directml
 from PIL import Image
 from torchvision import models, transforms
 
@@ -77,7 +76,7 @@ def load_deepguard_model():
     Returns:
         Tuple of (model, device) ready for inference.
     """
-    device = torch_directml.device()
+    device = torch.device('cpu')
 
     model = models.resnet18(weights=None)
     num_ftrs = model.fc.in_features
