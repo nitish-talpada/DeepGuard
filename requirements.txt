@@ -1,0 +1,10 @@
+torch
+torchvision
+torch-directml
+streamlit
+opencv-contrib-python
+Pillow
+numpy
+matplotlib
+seaborn
+scikit-learn
